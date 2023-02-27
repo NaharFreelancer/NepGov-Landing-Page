@@ -183,16 +183,11 @@ color: #3560AD;
 .bulletine__section{
     margin: 55px 0 35px;
 }
-.bulletine__inner{
+
+.bulletine__inner ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-}
-
-.bulletine__inner ul li {
-    display:inline-block;
-    padding-right:50px;
 }
 
 
@@ -213,7 +208,7 @@ color: #3560AD;
     position: relative;
     color: #fff;
     min-height: 286px;
-    padding: 25px 0  0 25px;
+    padding: 24px 25px;
 }
 
 .top{
@@ -246,8 +241,6 @@ color: #3560AD;
     font-weight: 400;
     line-height: 25px;
 
-
-
 }
 
 /* =======Report Section End Here=======*/
@@ -258,13 +251,12 @@ color: #3560AD;
 
 .single__button__section{
     text-align: center;
-    margin-bottom: 100px;
     position:absolute;
-    left: 25px;
-    top: 213px;
-    width: 580px;
-    height:49px ;
-
+    bottom: 24px;
+    width: 100%;
+    max-width: 580px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 a.single__button{
@@ -273,17 +265,24 @@ a.single__button{
     font-weight: bold;
     padding: 10px 25px;
     background-color: #fff;
-    border: none;
     color: #EF4634;
     border-radius: 30px;
-    margin: auto ;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 
 }
 a.single__button:hover{
     background-color: #fff;
     border: none;
     color: #3560AD;
+}
+a.single__button.vote__btn{
+    color: #3560AD;
+}
+
+a.single__button.vote__btn:hover {
+    color: #EF4634;
+
+
 }
 /* =========Single Button===== */
 
@@ -294,26 +293,26 @@ a.single__button:hover{
     position: relative;
     color: #fff;
     min-height: 286px;
-    padding: 25px 0  0 25px;
+    padding:24px 25px;
 }
 
-.top{
+/* .top{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 30px;
-}
-.top .question{
+} */
+/* .top .question{
     padding-bottom: 14px;
     font-size: 16px;
     font-weight: 400;
-}
+} */
 
-.top .live{
+/* .top .live{
     padding-bottom: 14px;
     font-size: 16px;
     font-weight: 700;
-}
+} */
 
 .question__content .question__p{
     font-size: 20px;
