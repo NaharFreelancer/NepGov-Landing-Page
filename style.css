@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5,h6,p{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root{
+    --white : #fff;
+}
+/* =====Navbar Start =====*/
+.header__section{
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+}
+.nav__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% ;
+    max-width: 1440px;
+    margin: 17px 0px;
+    padding-bottom: 15px;
+}
+
+.nav__middle ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__middle ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #808DA5;
+}
+
+.nav__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+h5.nav__title {
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: bold;
+
+}
+
+.nav__span{
+    color: #EF4634;
+}
+
+a.btn_log {
+    margin: 0px 15px;
+    color: #3560AD;
+    border: 2px solid #3560AD;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding:7px 14px;
+    display: inline-block; 
+    text-decoration: none;
+    transition: all .5s ease-in-out
+}
+
+.btn_log i {
+    margin-right: 5px;
+}
+
+a.btn_log:hover {
+  background-color: #3560AD;
+  color:var(--white);
+}
+
+.btn_sign {
+    background-color: #3560AD;
+    border: 2px solid #3560AD;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding:7px 14px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.btn_sign i{
+    margin-right: 5px;
+}
+
+a.btn_sign  {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s ease-in-out;
+
+}
+
+a.btn_sign:hover{
+background-color: transparent;
+color: #3560AD;
+}
+
+/* ==========menu bar==== =====*/
+.menuIcon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile__menu{
+    position: absolute;
+    height: 100vh;
+    background-color: #C7C7C7;
+    width: 50%;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+    
+}
+.open{
+    transform: translateX(0%);
+}
+
+.mobile__menu ul li{
+    margin-bottom: 25px;
+}
+
+.mobile__menu ul li a{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.crossBtn{
+    cursor: pointer;
+}
+/* =========menu bar ===========*/
+
+@media screen and (max-width: 1399){
+    .nav__middle ul li{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .menuIcon{
+        display: block;
+    }
+    .nav__middle, .nav__right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .mobile__menu{
+        width: 100%;
+    }
+}
+
+/* Navbar End */
+
+/* =========Bulletine Section Start */
+.bulletine__section{
+    margin: 55px 0 35px;
+}
+.bulletine__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bulletine__inner ul li {
+    display:inline-block;
+    padding-right:50px;
+}
+
+
+.bulletine__inner ul li a{
+    color:#000000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.bulletine__inner ul li a i{
+    color: #EF4634;
+}
+/* =========Bulletine Section End */
+
+/* =======Report Section Start Here=======*/
+.report__content{
+    background: radial-gradient(100% 100% at 50% 0%, #EF4634 0%, #3560AD 100%);
+    position: relative;
+    color: #fff;
+    min-height: 286px;
+    padding: 25px 0  0 25px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.top .crime{
+    padding-bottom: 14px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.top .live{
+    padding-bottom: 14px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.report__content .report__h3{
+    font-size: 33px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 580px;
+    line-height: 43px;
+}
+
+.report__content .report__p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+
+
+
+}
+
+/* =======Report Section End Here=======*/
+
+
+
+/* =========Single Button===== */
+
+.single__button__section{
+    text-align: center;
+    margin-bottom: 100px;
+    position:absolute;
+    left: 25px;
+    top: 213px;
+    width: 580px;
+    height:49px ;
+
+}
+
+a.single__button{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: none;
+    color: #EF4634;
+    border-radius: 30px;
+    margin: auto ;
+    transition: all .5s ease-in-out;
+
+}
+a.single__button:hover{
+    background-color: #fff;
+    border: none;
+    color: #3560AD;
+}
+/* =========Single Button===== */
+
+
+/* =======Question Section Start Here=======*/
+.question__content{
+    background: radial-gradient(100% 100% at 50% 0%, #FF3189 0%, #FF402A 100%);
+    position: relative;
+    color: #fff;
+    min-height: 286px;
+    padding: 25px 0  0 25px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.top .question{
+    padding-bottom: 14px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.top .live{
+    padding-bottom: 14px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.question__content .question__p{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 580px;
+}
+
+/* =======Question Section End Here=======*/
