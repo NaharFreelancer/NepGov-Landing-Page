@@ -295,6 +295,15 @@ a.single__button.vote__btn:hover {
 
 
 }
+
+@media screen and (max-width:1399px) {
+    a.single__button{
+        max-width: unset;
+        width: 85%;
+        margin: auto;
+    }
+    
+}
 /* =========Single Button===== */
 
 
@@ -340,11 +349,17 @@ a.single__button.vote__btn:hover {
     margin: 50px 0;
 
 }
-.politics__content{
+.politics__box{
+    padding: 24px 25px;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    margin-bottom: 20px;
+
+}
+/* .politics__content{
     padding: 30px 30px 56px ;
     box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
 
-}
+} */
 
 .politics__p{
     color:#808DA5;
@@ -441,8 +456,9 @@ p.apr__box.approve
 .daily__question__box1{
     background-color: #3560AD;
     color: #fff;
-    padding: 24px 25px 119px;
+    padding: 24px 25px 0;
     position: relative;
+    height: 298px;
 }
 /* ==========Vote Button Start========== */
 .vote__button__section{
@@ -459,13 +475,17 @@ a.vote__button {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    padding: 10px 131px;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 363px;
+    display: inline-block;
     background-color: #fff;
     color: #3560AD;
     border-radius: 30px;
     transition: all .3s ease-in-out;
 
 }
+
 a.vote__button:hover{
     background-color: #fff;
     border: none;
@@ -478,6 +498,15 @@ a.vote__button:hover{
     width: 100%;
     max-width: 363px;
 
+}
+
+@media screen and (max-width:1399px)
+ { a.vote__button{
+    max-width: unset;
+    width: 85%;
+    padding: 5px 0;
+ }
+    
 }
 
 /* ==========Vote Button End========== */
@@ -504,7 +533,8 @@ a.vote__button:hover{
 }
 
 .blog__img{
-    margin:24px 25px 14px ;
+    /* margin:24px 25px 14px ; */
+    width: 100%;
 }
 /* =======Extra CSS for Articls Blog========= */
 
